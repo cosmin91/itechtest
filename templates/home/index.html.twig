@@ -1,0 +1,72 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Test{% endblock %}
+
+{% block stylesheets %}
+{{ encore_entry_link_tags('app') }}
+{% endblock %}
+
+{% block body %}
+{# body #}
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+
+            <div class="calculator">
+
+                <div class="summary-container">
+                    <div class="steps">
+                        
+                    </div>
+                    <div class="result">0</div>
+                </div>
+
+                <div class="btns-container">
+                    <div class="left-column">
+                        <div class="top-btns">
+                            <button class="clear-btn">AC</button>
+                            <button class="save-btn">SAVE</button>
+                        </div>
+                        <div class="digits">
+                            <div class="btns-group">
+                                <button data-value=".">.</button>
+                                <button data-value="0">0</button>
+                            </div>
+                            <div class="btns-group">
+                                <button data-value="1">1</button>
+                                <button data-value="2">2</button>
+                                <button data-value="3">3</button>
+                            </div>
+                            <div class="btns-group">
+                                <button data-value="4">4</button>
+                                <button data-value="5">5</button>
+                                <button data-value="6">6</button>
+                            </div>
+                            <div class="btns-group">
+                                <button data-value="7">7</button>
+                                <button data-value="8">8</button>
+                                <button data-value="9">9</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-column">
+                        <button data-value="÷">÷</button>
+                        <button data-value="x">x</button>
+                        <button data-value="-">-</button>
+                        <button data-value="+">+</button>
+                        <button data-value="=">=</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block javascripts %}
+{{ encore_entry_script_tags('app') }}
+{% endblock %}
