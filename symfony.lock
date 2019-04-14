@@ -29,6 +29,12 @@
     "doctrine/reflection": {
         "version": "v1.0.0"
     },
+    "egyg33k/csv-bundle": {
+        "version": "1.0.1"
+    },
+    "league/csv": {
+        "version": "8.2.3"
+    },
     "psr/cache": {
         "version": "1.0.1"
     },

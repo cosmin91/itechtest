@@ -1,0 +1,42 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Test{% endblock %}
+
+{% block stylesheets %}
+{{ encore_entry_link_tags('app') }}
+{% endblock %}
+
+{% block body %}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+
+            <table class="table calculations">
+                <thead>
+                    <tr>
+                        <th scope="col">IP</th>
+                        <th scope="col">Total</th>
+                        <th scope="col">Browser</th>
+                        <th scope="col">Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>*****</th>
+                        <td>*****</td>
+                        <td>*****</td>
+                        <td>*****</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block javascripts %}
+{{ encore_entry_script_tags('calculations') }}
+{% endblock %}
